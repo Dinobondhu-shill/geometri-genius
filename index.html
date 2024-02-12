@@ -51,13 +51,18 @@
         <h2 class="text-3xl font-bold  text-center">Rectangle</h2>
         <p class="text-[#414141]">Area (A) = w x I</p>
         <div class="">
-          <input class="w-24 bg-slate-200 rounded-md p-2" type="text" placeholder="b">
+          <input id="rectangle-width" class="w-24 bg-slate-200 rounded-md p-2" type="text" placeholder="w">
           <span class="mr-2">cm</span>
-          <input class="w-24 bg-slate-200 rounded-md p-2" type="text" placeholder="h">
+          <input id="rectangle-i" class="w-24 bg-slate-200 rounded-md p-2" type="text" placeholder="I">
           <span>cm</span>
         </div>
+        <div>
+          <p>
+            Area : <span id="rectangle">0</span> cm<sup>2</sup>
+          </p>
+        </div>
         <div class="card-actions">
-          <button class="py-2 px-7 text-white font-bold bg-[#1090D8] rounded-lg w-full">Buy Now</button>
+          <button onclick="rectangleCalculation ()" class="py-2 px-7 text-white font-bold bg-[#1090D8] rounded-lg w-full">Buy Now</button>
         </div>
       </div>
     </div>
@@ -141,6 +146,7 @@
   
 
   <script src="scripts/tringlecalculate.js"></script>
+  <script src="scripts/rectanglecalculate.js"></script>
   <script src="scripts/tailwind.config.js"></script>
 </body>
 </html>
